@@ -1,0 +1,12 @@
+<div class="order-list">
+    <h2>Order List</h2>
+    <ul>
+      <li *ngFor="let order of orders$ | async" class="order-item">
+        <span>{{ order.customerName }}</span>
+        <span>{{ order.status }}</span>
+        <span>${{ order.totalAmount }}</span>
+        <a [routerLink]="['/order-details', order.id]">View Details</a>
+      </li>
+    </ul>
+  </div>
+  

@@ -1,0 +1,39 @@
+.wrapper {
+  background-color: #f9d500; /* A softer, more vibrant yellow */
+  width: 100%;
+  padding: 1.5rem 2rem; /* Adjust padding for a cleaner, more spacious design */
+  box-sizing: border-box;
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: space-between; /* Space between logo and navigation links */
+  border-bottom: 2px solid var(--border-color); /* Thicker bottom border for contrast */
+}
+
+.wrapper a {
+  text-decoration: none;
+  font-weight: 400;
+  color: black;
+  font-size: 1.1rem;
+  margin-left: 20px; /* Space between links */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.wrapper a:hover {
+  color: #46c4ff; /* Change text color on hover for interactivity */
+}
+
+.wrapper a.active {
+  font-weight: 700; /* Make active link bolder */
+  color: #46c4ff; /* Active link color */
+}
+
+.wrapper .logo {
+  height: 3rem;
+  object-fit: contain;
+  margin-right: auto; /* Push logo to the left */
+  transition: transform 0.3s ease; /* Smooth scale effect on hover */
+}
+
+.wrapper .logo:hover {
+  transform: scale(1.05); /* Slight zoom on hover for interactivity */
+}

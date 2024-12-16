@@ -1,0 +1,36 @@
+.wrapper {
+  background-color: rgba(225, 248, 255, 0.9); /* Slightly more opaque for better contrast */
+  height: auto;
+  padding: 20px 30px; /* Increased horizontal padding for spacing */
+  width: 100%;
+  box-sizing: border-box;
+  flex-grow: 1;
+  
+  /* Rounded corners for a modern look */
+  border-radius: 10px;
+  
+  /* Subtle shadow for depth */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+  /* Make sure content is aligned properly */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.wrapper h1, .wrapper p {
+  margin: 0 0 10px 0; /* Spacing between title and content */
+  font-family: 'Roboto', sans-serif; /* Use a modern font for readability */
+  color: #333; /* Dark text color for better contrast */
+}
+
+.wrapper a {
+  text-decoration: none;
+  color: #46c4ff; /* Color for links that match the modern theme */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.wrapper a:hover {
+  color: #3399cc; /* Darker blue on hover for interactive feedback */
+}

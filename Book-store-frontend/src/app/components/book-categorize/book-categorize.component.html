@@ -1,0 +1,39 @@
+<div class="book-categorize-container">
+    <h2>Manage Book Categories</h2>
+  
+    <!-- Add Category -->
+    <div class="add-category">
+      <input
+        type="text"
+        [(ngModel)]="newCategory"
+        placeholder="Enter new category"
+      />
+      <button (click)="addCategory()">Add</button>
+    </div>
+  
+    <!-- Categories List -->
+    <div class="categories-list">
+      <h3>Category List</h3>
+      <ul>
+        <li *ngFor="let category of categories; let i = index">
+          <span *ngIf="editIndex !== i">{{ category }}</span>
+  
+          <!-- Edit Mode -->
+          <input
+            *ngIf="editIndex === i"
+            type="text"
+            [(ngModel)]="editedCategory"
+          />
+  
+          <!-- Action Buttons -->
+          <div class="actions">
+            <button *ngIf="editIndex !== i" (click)="editCategory(i)">Edit</button>
+            <button *ngIf="editIndex === i" (click)="saveEdit()">Save</button>
+            <button *ngIf="editIndex === i" (click)="cancelEdit()">Cancel</button>
+            <button (click)="removeCategory(i)">Delete</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  

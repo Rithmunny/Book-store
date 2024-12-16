@@ -1,0 +1,28 @@
+.add-product-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 10;
+  background-color: #46c4ff; /* Change to a more modern blue color */
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px; /* Rounded corners for a pill shape */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Slightly softer shadow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover and focus */
+}
+
+.add-product-btn:hover {
+  background-color: #39a7d8; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight scale effect to indicate interaction */
+}
+
+.add-product-btn:focus {
+  outline: none;
+  box-shadow: 0 0 20px rgba(0, 148, 255, 0.6); /* Highlight the button on focus */
+}

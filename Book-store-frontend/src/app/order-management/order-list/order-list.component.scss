@@ -1,0 +1,53 @@
+.order-list {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+  
+      .order-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        border-bottom: 1px solid #f0f0f0;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        cursor: pointer;
+        
+        &:hover {
+          background-color: #f9fafb; /* Light hover background */
+          transform: translateX(5px); /* Slightly shift the item on hover */
+        }
+  
+        .order-details {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          
+          .order-title {
+            font-weight: bold;
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+          }
+  
+          .order-date {
+            font-size: 14px;
+            color: #888;
+          }
+        }
+  
+        a {
+          color: #007bff; /* Blue link color */
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 14px;
+          transition: color 0.3s ease;
+  
+          &:hover {
+            color: #0056b3; /* Darker blue when hovered */
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,16 @@
+<div class="order-details" *ngIf="order">
+    <h2>Order Details</h2>
+    <p>Customer: {{ order.customerName }}</p>
+    <p>Status: {{ order.status }}</p>
+    <p>Total: ${{ order.totalAmount }}</p>
+  
+    <h3>Items:</h3>
+    <ul>
+      <li *ngFor="let item of order.items">{{ item }}</li>
+    </ul>
+  
+    <button (click)="updateStatus('pending')">Mark as Pending</button>
+    <button (click)="updateStatus('shipped')">Mark as Shipped</button>
+    <button (click)="updateStatus('completed')">Mark as Completed</button>
+  </div>
+  
